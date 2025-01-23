@@ -10,5 +10,18 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+ 
+  const items = [1, 2, 3, 4, 5]; // Array to iterate through
+let index = 0;
+ 
+const interval = setInterval(() => {
+    console.log(`Processing item: ${items[index]}`);
+    index++;
+ 
+    // Stop the loop when done
+    if (index >= items.length) {
+        clearInterval(interval); // Clear the interval
+        console.log("Loop finished!");
+    }
+}, 1000); // 1 second delay
 });
