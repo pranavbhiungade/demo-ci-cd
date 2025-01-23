@@ -3,8 +3,8 @@ trigger:
     include:
       - main  # Automatically trigger the pipeline when pushing to the 'main' branch
 
-pool:
-  vmImage: 'ubuntu-latest'  # Use the latest Ubuntu image for the pipeline
+pool: new-aget-pool
+   # Use the latest Ubuntu image for the pipeline
 
 steps:
 - task: NodeTool@0
