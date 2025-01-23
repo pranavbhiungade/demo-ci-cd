@@ -14,7 +14,6 @@ steps:
 
 - script: |
     npm install  # Install dependencies
-    npm run test  # Run any tests you’ve defined (for now, this does nothing)
   displayName: 'Install dependencies and run tests'
 
 - task: ArchiveFiles@2
