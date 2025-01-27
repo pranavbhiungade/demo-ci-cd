@@ -21,7 +21,7 @@ const interval = setInterval(() => {
     // Stop the loop when done
     if (index >= items.length) {
         clearInterval(interval); // Clear the interval
-        console.log("Loop finished!");
+        console.log("Loop Finished Hiiiiiiiiii!");
     }
 }, 1000); // 1 second delay
 });
